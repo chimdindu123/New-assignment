@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pricing Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Choose Your Plan</h1>
+
+    <div class="pricing">
+
+        <!-- BASIC -->
+        <div class="card" onclick="selectCard(this)">
+            <div class="header">
+                <h2>Basic</h2>
+                <p>For beginners</p>
+            </div>
+
+            <div class="price">
+                <h3>$10</h3>
+                <p>per month</p>
+            </div>
+
+            <div class="features">
+                <p>✓ 5 Projects</p>
+                <p>✓ 10GB Storage</p>
+                <p>✓ Basic Support</p>
+            </div>
+
+            <button>Select Plan</button>
+        </div>
+
+
+        <!-- PRO -->
+        <div class="card popular" onclick="selectCard(this)">
+            <div class="popular-text">MOST POPULAR</div>
+
+            <div class="header">
+                <h2>Pro</h2>
+                <p>For growing users</p>
+            </div>
+
+            <div class="price">
+                <h3>$25</h3>
+                <p>per month</p>
+            </div>
+
+            <div class="features">
+                <p>✓ 20 Projects</p>
+                <p>✓ 50GB Storage</p>
+                <p>✓ Priority Support</p>
+            </div>
+
+            <button>Select Plan</button>
+        </div>
+
+
+        <!-- PREMIUM -->
+        <div class="card" onclick="selectCard(this)">
+            <div class="header">
+                <h2>Premium</h2>
+                <p>For professionals</p>
+            </div>
+
+            <div class="price">
+                <h3>$50</h3>
+                <p>per month</p>
+            </div>
+
+            <div class="features">
+                <p>✓ Unlimited Projects</p>
+                <p>✓ 200GB Storage</p>
+                <p>✓ 24/7 Premium Support</p>
+            </div>
+
+            <button>Select Plan</button>
+        </div>
+
+    </div>
+
+
+    <script>
+        function selectCard(card) {
+
+            var cards = document.querySelectorAll(".card");
+
+            cards.forEach(function(item) {
+                item.classList.remove("selected");
+            });
+
+            card.classList.add("selected");
+        }
+    </script>
+
+</body>
+</html>

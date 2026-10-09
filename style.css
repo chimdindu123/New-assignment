@@ -1,0 +1,73 @@
+body {
+    font-family: Arial;
+    background-color: #f2f5f9;
+    text-align: center;
+    padding: 40px;
+}
+
+h1 {
+    color: #222;
+    margin-bottom: 30px;
+}
+
+.pricing {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.card {
+    background-color: white;
+    width: 280px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 3px 10px #ccc;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height: 90px;
+}
+
+.price {
+    height: 100px;
+}
+
+.features {
+    height: 150px;
+    text-align: left;
+}
+
+button {
+    background-color: #1769e0;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0d4fa8;
+}
+
+.popular {
+    border: 3px solid #1769e0;
+    position: relative;
+}
+
+.popular-text {
+    background-color: #1769e0;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.selected {
+    transform: scale(1.05);
+    border: 3px solid #20a464;
+}
